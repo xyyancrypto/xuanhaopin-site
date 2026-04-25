@@ -127,13 +127,16 @@
     }
     .spec b { display: block; font-size: 12px; color: var(--muted); margin-bottom: 6px; }
     .split { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; margin-top: 16px; }
-    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+    .cta-row { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; position: relative; z-index: 3; }
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
       min-height: 44px; padding: 0 16px; border-radius: 12px; font-weight: 700;
       border: 1px solid var(--line); background: #1d2a4c;
+      position: relative; z-index: 4; cursor: pointer; text-decoration: none;
+      pointer-events: auto;
     }
     .btn.primary { background: linear-gradient(135deg, #5caeff 0%, #70d8ff 100%); color: #06111f; border: none; }
+    .btn:focus-visible { outline: 2px solid #9ad1ff; outline-offset: 2px; }
     .btn.secondary { background: #1a2441; color: var(--text); }
     .faq-list { display: grid; gap: 12px; }
     .faq-item { padding: 18px; }
