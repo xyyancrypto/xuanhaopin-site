@@ -3,6 +3,9 @@
 ## 当前 deploy 目录内容
 
 - `index.html`
+- `trash-bags.html`
+- `disposable-gloves.html`
+- `storage-bags.html`
 - `site-index.html`
 - `data.json`
 - `robots.txt`
@@ -35,6 +38,9 @@
 
 也就是仓库根目录应该直接看到：
 - `index.html`
+- `trash-bags.html`
+- `disposable-gloves.html`
+- `storage-bags.html`
 - `assets/`
 - `photo/`
 - `go/`
